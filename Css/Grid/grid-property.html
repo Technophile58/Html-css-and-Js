@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-column start-end</title>
+    <style>
+        .container{
+            width: 610px;
+            height: 350px;
+            background-color: gainsboro;
+            border: 2px solid black;
+            /* container act as block item if display :grid */
+            display: grid;
+            /* container act as inline item if display :inline-grid */
+            display: inline-grid;
+            grid-template-rows: 100px 100px 100px ;
+        grid-template-columns: 200px 200px 200px  ;
+        grid-gap: 5px;
+        /* all the justify-items property will put items in start,end,or center of cell horizontally;*/
+        /* justify-items: start;
+        justify-items: end;
+        justify-items: center; */
+
+  /* all the align-items property will put items in start,end,or center of cell vertically;*/
+        /* align-items: start;
+        align-items: end;
+        align-items: center; */
+
+        /* will be used when we wanter to justify and align both property same as end,start,center */
+place-items: end;
+        }
+        .container>div{
+            width: 80px;
+            height: 80px;
+            text-align: center;
+        }
+        .one{
+            background-color: blueviolet;
+            /* it will align and justify item along its cell */
+           /* justify-self: end; */
+           /* align-self: end; */
+
+            /* will be used when we wanter to justify-self and align-self both property same as end,start,center */
+           place-self: start;
+             } 
+        .two{
+            background-color: blue;
+     
+        }.three{
+            background-color: yellow;
+        }
+        .four{
+            background-color: rgb(105, 222, 105);
+        }
+        .five{
+            background-color:aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+
+    </div>
+    <span>This is span item</span>
+</body>
+</html>

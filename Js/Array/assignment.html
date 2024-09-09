@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<body>
+    <script>
+        let arr=[7,9,0,-2];
+        console.log(arr.slice(0,3));
+        console.log(arr.slice(1));
+
+        //blank string check 
+        // let str=prompt("enter your string");
+        // if(str.length==0){
+        //     console.log("String is blank");
+        // }
+        // else{
+        //     console.log("String is not blank");
+        // }
+
+        //check uppercase and lowercase
+        let str1=prompt("Enter your name");
+      
+        if(str1===str1.toLowerCase()){
+            console.log("character is in lowercase");
+        }
+        else{
+            console.log("character is not lowercase");
+        }
+
+//space removing from leading and trailing
+let str3=prompt("Enter your name");
+console.log(`Original string: ${str3}`);
+console.log(`String after removing leading and trailing spaces : ${str3.trim()}`)
+
+        //check element included or not
+
+        let arr2=["a","b",67,89,78];
+        let item="ad";
+        if(arr2.includes(item)){
+            console.log("item is present");
+        }
+        else{
+            console.log("item is not present");
+        }
+    </script>
+</body>
+</html>

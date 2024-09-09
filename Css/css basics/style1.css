@@ -1,0 +1,40 @@
+h1 {
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-family: Impact, Haettenschweiler, sans-serif;
+}
+
+p {
+    color: black;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+h2 {
+    color: crimson;
+    font-size: 35px;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: papyrus;
+}
+
+h3 {
+    font-size: 40px;
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    letter-spacing: 2px;
+    font-family: brush script MT;
+
+
+}

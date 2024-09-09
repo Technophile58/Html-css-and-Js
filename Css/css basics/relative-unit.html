@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative units</title>
+<style>
+    .outer{
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+    margin-bottom: 10px;
+    }
+    .inner{
+        background-color: yellow;
+        width: 30%;
+        height: 30%;
+        margin: 10%;
+
+    }
+    div{
+        /* snowball effect happened */
+        /* font-size: 2em; */
+        
+        /* font size change relative to html */
+        font-size: 2rem;
+
+    }
+</style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+
+    <section>
+        section
+        <div>
+            div 1
+            <div>
+                div2
+            </div>
+        </div>
+    </section>
+</body>
+</html>

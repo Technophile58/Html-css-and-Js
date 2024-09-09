@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+    <style>
+    
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            text-align: center;
+            border: 3px solid black;
+            margin: 20px;
+            display: inline-block;
+        }
+        #static{
+            background-color: aqua;
+            /* No effect applied as position is static */
+            position: static;
+        top: 100px;
+        left: 100px;
+        }
+
+        #relative{
+            background-color: brown;
+            /* property applied  to relative to itself    */
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+        #absolute{
+            background-color: burlywood;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+        #fixed{
+            background-color: burlywood;
+            position: fixed;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+<h2>Static Demo</h2>
+<div ></div>
+<div id="static"></div>
+    </section>
+    
+
+    <section>
+        <h2>Relative Demo</h2>
+        <div ></div>
+        <div id="relative"></div>
+        <div ></div>
+            </section>
+
+            <section>
+                <h2>Absolute Demo</h2>
+                <div ></div>
+                <div id="absolute"></div>
+                <div ></div>        
+            </section>
+
+
+            <section>
+                <h2>Fixed Demo</h2>
+                <div ></div>
+                <div id="fixed">Fixed</div>
+            </section>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus quo sint est totam, quas cum, labore provident enim a itaque ullam voluptatum, nostrum soluta? Perferendis ab expedita veniam, aliquam similique libero odio numquam vel recusandae est iure doloribus, distinctio quis suscipit ullam obcaecati inventore beatae optio soluta, sequi adipisci iusto laborum unde! Iste exercitationem rem doloribus itaque, aliquid, alias dolorem, veritatis temporibus labore saepe commodi quaerat iusto modi! Nisi mollitia suscipit repellat odit omnis accusantium tenetur hic quisquam assumenda veritatis eaque minus adipisci eveniet officiis eligendi, fuga quis doloremque aliquam libero ut minima. Provident similique temporibus exercitationem distinctio mollitia optio est harum assumenda laborum eum quisquam quod nemo, voluptates numquam libero? Rem illo inventore accusantium consectetur aut quaerat reiciendis et quam sit voluptatem consequuntur aliquam ipsum distinctio unde explicabo quidem quo hic, dignissimos dicta rerum quibusdam laboriosam. Maxime vitae excepturi culpa recusandae totam, enim eligendi eaque iusto praesentium, ea dolorem nemo corrupti nulla deleniti, expedita accusamus fugit modi provident nisi in. Voluptas aspernatur, iusto repellat voluptatum illum reprehenderit quo atque fuga saepe? Aliquam earum eum expedita, laboriosam labore dolorum, in inventore adipisci excepturi quisquam fugit tenetur! Beatae iusto, neque eaque vitae aut officiis porro atque provident, ea eos nobis ipsam nulla iste voluptatum similique quibusdam illum. Ad, aut impedit illo tempora quidem facilis temporibus a libero iure aspernatur voluptate placeat laudantium voluptates qui ipsa asperiores? Optio magni architecto eveniet dolorum libero sequi culpa. Laborum assumenda maxime esse, consequatur laudantium possimus. Ipsa autem omnis, ad minima eos est dolor magnam totam consectetur vitae optio eius accusamus laudantium quisquam officia, non debitis perspiciatis doloribus. Qui commodi similique nulla quod placeat vel doloribus enim unde labore ratione rem maiores ad cum, quos eveniet deleniti repellat dolores et mollitia facere perspiciatis, illum omnis cupiditate temporibus. Omnis provident eaque repudiandae quos, in, quis sunt autem culpa, excepturi dignissimos deleniti. Ipsum nostrum voluptatibus nobis numquam, facere sit harum unde enim sunt totam maxime? Provident harum odit nam facilis aut aperiam quas. Adipisci beatae optio enim? Ipsam, enim ducimus? Delectus rem provident velit, similique architecto error deserunt magnam veritatis minus cumque suscipit voluptatem odio ipsum ab earum quia atque molestiae ad commodi alias dolores obcaecati quibusdam facilis nisi. Placeat molestiae, illo veniam sapiente iure ullam amet necessitatibus sint aspernatur officiis! Incidunt beatae quo reiciendis hic ratione doloribus officiis illum eius rem facilis? Inventore id soluta vel, incidunt error dolor, delectus odio rem quis vitae libero, beatae perferendis.</p>
+</body>
+</html>

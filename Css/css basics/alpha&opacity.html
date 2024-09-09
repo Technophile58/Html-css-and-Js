@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha and Opacity</title>
+    <style>
+        .div1{
+            width: 200px;
+            height: 200px;
+            background-color: rgba(255, 0, 0,0.5);            
+            /* last 2 digits shows the alpha value  ranges between 00-ff */
+            /* background-color: #ff000080; */
+        }
+
+        .opacity {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(255, 0, 0);
+            opacity:1;
+            /* all element willl be hidden in opacity 0 */
+        opacity: 0;
+
+        }
+    </style>
+</head>
+<body>
+     <div class="div1">
+
+     </div>
+
+     <div class="opacity">
+        <h3>Heading</h3>
+        <button>submit</button>
+     </div>
+</body>
+</html>

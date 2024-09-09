@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+
+    <style>
+        .heading{
+            color: black;
+        }
+div{
+    width: 700px;
+    height: 70px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    border: 2px solid black;
+ 
+    
+}
+
+@media(min-width:800px){
+    h1{
+    
+        font-size: 20px;
+    }
+    div{
+        background-color: brown;
+    }
+    body{
+        background-color: rgb(253, 155, 8);
+    }
+}
+@media(max-width:800px){
+    h1{
+color: brown;
+font-size: 35px;
+
+    }
+    div{
+        background-color: rgb(125, 247, 3);
+
+
+    }
+    body{
+        background-color:blueviolet;
+    }
+}
+
+
+/* meand form 0 to  400px media query applied */
+@media(min-width:0px) and (max-width:400px){
+    h1{
+        color:rgb(5, 250, 250);
+    }
+    div{
+        background-color: magenta;
+    }
+    body{
+        background-color: bisque;
+    }
+}
+
+@media(orientation:landscape){
+    h1{
+        color:white
+    }
+    div{
+        background-color: rgb(226, 14, 177);
+    }
+    body{
+background-color: bisque;
+    }
+}
+    </style>
+</head>
+
+<body>
+  
+    <div>
+        <h1>Media  Query Demo</h1>
+    </div>
+</body>
+
+</html>

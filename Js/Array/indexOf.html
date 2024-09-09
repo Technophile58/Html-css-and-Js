@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let array = ["green", "yellow", "red"];
+        console.log(array.indexOf("red"));
+
+        console.log(array.includes("red")); //return true if element present in array and  false if not
+
+        let primary = ["red", "yellow", "blue"];
+        let secondary = ["orange", "green", "violet"];
+        console.log(primary);
+        console.log(secondary);
+        console.log(primary.concat(secondary));
+        console.log(secondary.concat(primary));
+
+        console.log(primary.reverse());//will change original array too
+
+        //slice in array
+
+        let color = ["red", "green", "blue", "yellow"];
+
+        console.log(color.slice(2, 4)) //output-->blue,yellow
+        console.log(color.slice(-1)) //output-->yellow
+
+
+        //splice:removes/replaces/add element in place
+        //splice(start,delete count,item0...itemN)
+        //splice will manipulate origianl string and slice didn't
+        let car = ["bmw", "xuv", "mercedes"];
+        console.log(car.splice(2));
+        console.log(car);
+        car.splice(0, 0, "toyota", "wagon R");
+        console.log(car);
+        car.splice(1, 2);
+        console.log(car);
+        car.splice(1, 1, "gwagon"); //replaces  wagon R to gwagon
+        console.log(car);
+
+        //sort convert the array into strings or character then it  convert it into sort so if we  try to sort in numbers it will not give desired result 
+        let char = ['c', 'd', 'e', 'f', 'a', 'b']; //output-->['a', 'b', 'c', 'd', 'e', 'f']
+        console.log(char.sort());
+
+        let num = [99, 100, 89, 76, 85];
+        console.log(num.sort()); //output-->[100, 76, 85, 89, 99]
+
+
+
+        let lang = ['c', 'c++', 'python', 'sql', 'java', 'c#', 'html'];
+        console.log(lang.reverse().indexOf("java"));
+
+        //array references
+
+        let arr1 = [1];
+        let arr2 = [1];
+        console.log(arr1 == arr2); //false due to difference memory reference
+        let arr3 = [1, 2, 3];
+        arr4 = arr3;
+
+        console.log(arr3 == arr4); // true because both pointing same memory location address change in one array will affect other too due to same  memory address point
+        console.log(arr4);
+        arr4.push(5);
+        console.log(arr3);
+
+
+        //constant array:value are changable and push pop  also worked but we cannot assign new array in constant array because it will not change the reference address of array
+        const arr5 = [1, 2, 3];
+        arr5.push(5);
+        arr5.push(6);
+
+        arr5.pop();
+
+        console.log(arr5);
+
+        // arr5=arr3; //output--> Assignment to constant variable
+
+
+        // Nested array:array of array
+
+        let nums = [[2, 4],
+                    [3, 6],
+                    [4, 8]];
+        console.log(nums[1][1]);
+
+
+        
+    </script>
+</body>
+
+</html>

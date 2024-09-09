@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+<style>
+    .div1{
+        width: 200px;
+        height: 200px;
+        background-color: rgba(0, 255, 0, 0.5);
+        /* shorthand transition:property name |  duration  | timing-function |delay */
+        transition: 0.2s 0.2s ;
+    }
+    .div1:hover{
+        background-color: rgba(255,0 , 0, 0.8);
+        border-radius: 50%;
+       
+    }
+    .div2{
+        width: 150px ;
+        height: 150px;
+        background-color: red;
+        margin: 0 auto;
+        transition: margin-top 2s ease-in 2s;
+    }
+
+    .div2:hover{
+       
+        margin-top: 500px;
+         background-color: aqua;
+        border-radius: 50%;
+       
+    }
+</style>
+</head>
+<body>
+    <!-- <div class="div1">
+      
+    </div> -->
+    <div class="div2">
+
+    </div>
+
+
+    
+</body>
+</html>

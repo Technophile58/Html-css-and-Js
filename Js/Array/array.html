@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h2>Array </h2>
+    <script>
+        let marks=[95,96,97,98,99];
+        console.log(marks);
+        console.log(marks[0]); //output->95
+        let name=["tushar","rahul","raj"];
+        console.log(name[0][0]); // output-->t 
+        console.log(name.length); //output-->3
+        console.log(name[0].length); //output-->6
+        //empty array
+        let empArray=[];
+        console.log(empArray);
+        //array can be of multiple types also in javascript
+let array=["hello","hi",12,13,14];
+console.log(array[3]);
+
+//array are mutable
+let fruit=["Mango","banana","apple"];
+fruit[2]="pineapple"
+console.log(fruit);
+
+
+fruit[10]="litch" // will increase  the size of array upto length of 11 and in the middle  array have empty element and will be counted in array length
+console.log(fruit);
+console.log(fruit.length);
+console.log(fruit[5]); //undefined until given some  value 
+fruit[5]='samosa'
+console.log(fruit[5]); //undefined 
+    </script>
+</body>
+</html>

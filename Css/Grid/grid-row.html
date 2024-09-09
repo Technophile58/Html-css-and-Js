@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-column start-end</title>
+    <style>
+        .container{
+            width: 610px;
+            height: 350px;
+            background-color: gainsboro;
+            border: 2px solid black;
+            display: grid;
+            grid-template-rows: 100px 100px 100px ;
+        grid-template-columns: 200px 200px 200px  ;
+        grid-gap: 5px;
+        }
+        .container>div{
+            /* width: 100px;
+            height: 100px; */
+            text-align: center;
+        }
+        .one{
+            background-color: blueviolet;
+            grid-row-start: 1;
+            grid-row-end: 4;
+            /* shorthand */
+             grid-row: 1/4; /*starts from one and ends on 4 */
+        grid-row: 1/span 4; /* means needed three row after line  1 */
+            }
+        .two{
+            background-color: blue;
+            grid-row: 1/4;
+        }.three{
+            background-color: yellow;
+        }
+        .four{
+            background-color: rgb(105, 222, 105);
+        }
+        .five{
+            background-color:aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+    </div>
+</body>
+</html>

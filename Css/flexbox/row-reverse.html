@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            height: 300px;
+            width:1000px;
+            background-color: azure;
+            border: 2px solid black;
+   /* default flex property is row */
+            display: flex; 
+            /* It will change main axis  direction from  right to left  */
+    flex-direction: row-reverse;
+        }
+        h1{
+            text-align: center;
+        }
+        .container > div{
+            height: 100px;
+            width: 100px;
+            font-size: 1.5em;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox  Playground</h1>
+    <div class="container">
+ 
+        <div style="background-color: aqua;">Aqua</div>
+        <div style="background-color: blue;">Blue</div>
+        <div style="background-color: brown;">Brown</div>
+        <div style="background-color: aquamarine;">Aquamarine</div>
+        <div style="background-color: chocolate;">Chocolate</div>
+        <div style="background-color: yellow;">Yellow</div>
+        <div style="background-color: crimson;">Crimson</div>
+    </div>
+</body>
+</html>

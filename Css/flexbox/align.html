@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align item</title>
+    <style>
+     
+                .container{
+            height:600px;
+            width:70%;
+            background-color: azure;
+            border: 2px solid black;
+            display: flex; 
+        flex-direction: row;
+        /* flex-direction: column; */
+       
+        justify-content: flex-start;
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+        
+        align-items: flex-end; 
+
+        align-items:flex-start;
+
+     align-items: baseline;
+
+
+}
+        h1{
+            text-align: center;
+        }
+        .container > div{
+            height: 100px;
+            width: 300px;
+            font-size: 1.5em;
+            color: white;
+
+        }
+        #yellow{
+            font-size: 3.5em;
+            height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox  Playground</h1>
+    <div class="container">
+ 
+       
+        <div style="background-color: aqua;">Aqua</div>
+        <div style="background-color: blue;">Blue</div>
+        <div style="background-color: brown;">Brown</div>
+        <div style="background-color: aquamarine;">Aquamarine</div>
+        <div style="background-color: chocolate;">Chocolate</div>
+        <div style="background-color: yellow;" id="yellow">Yellow</div>
+        <div style="background-color: crimson;">Crimson</div>
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-repeat</title>
+    <style>
+        .container{
+            width: 600px;
+            height: 300px;
+            background-color: gainsboro;
+            border: 2px solid black;
+            display: grid;
+            /* grid-template-rows: 100px 100px 100px ;
+            grid-template-columns:100px 100px 100px 100px;
+              */
+            grid-template-rows: repeat(4,1fr);   /* same as grid-template-rows:1fr 1fr 1fr 1fr */
+            grid-template-columns:repeat(3,1fr); 
+          
+        
+        
+        }
+        .container>div{
+            /* width: 100px;
+            height: 100px; */
+            text-align: center;
+        }
+        .one{
+            background-color: blueviolet;
+        }
+        .two{
+            background-color: blue;
+        }.three{
+            background-color: yellow;
+        }
+        .four{
+            background-color: rgb(105, 222, 105);
+        }
+        .five{
+            background-color:aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+    </div>
+</body>
+</html>

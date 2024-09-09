@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <h2>String</h2>
+    <script>
+    //     let str=prompt("Enter your password");
+    //     //string are immutable  so no method can changes the  original string and new string is created 
+    //     //original string value is not manupulated by trim() method
+    //     let newstr=str.trim();
+    //   console.log(`New string ${newstr}`);
+    //   console.log(`Origianl string ${str}`);
+    
+    //uppercase and lowercase method
+    let name="Error";
+    console.log(name.toUpperCase());
+    console.log(name.toLowerCase());
+    
+
+    //argumment-indexof
+
+    let name1="ilovecoding";
+    console.log(name1.indexOf("Lo")); //-1 in case of not found
+    console.log(name1.indexOf("o")); //2 in case of  found
+
+    //method chaining
+
+    let name2="     Tushar "
+    console.log(name2.trim().toUpperCase()); //no need to write 2 method in different-different lines method are compute from left to-right
+
+    </script>
+</body>
+</html>
