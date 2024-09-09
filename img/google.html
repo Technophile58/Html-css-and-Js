@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google front page</title>
+    <link rel="stylesheet" href="google.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: arial, sans-serif;
+        }
+
+        section {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+
+        section header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+           
+        }
+
+        section header ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+
+        section header ul li {
+            list-style: none;
+            margin-left: 20px;
+            
+        }
+
+        section header ul li a {
+            text-decoration: none;
+            color: black;
+            
+        }
+
+        section header ul li button {
+            background-color: #4584ef;
+            border: none;
+            outline: none;
+            padding: 8px 14px;
+            color: #ffff;
+            font-size: 14px;
+            font-weight: 700;
+            border-radius: 3px;
+            
+        }
+
+        section .main {
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section .main .search-box {
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        section .main .search-box .search {
+            width: 100%;
+            padding: 16px;
+            padding-left: 60px;
+            padding-right: 90px;
+            border-radius: 30px;
+            border: 1px solid rgb(204, 204, 204);
+            outline: none;
+            font-size: 16px;
+        }
+
+        section .main .search-box .icon {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            padding: 12px 22px;
+            justify-content: space-between;
+            pointer-events: none;
+            align-items: center;
+         
+        }
+
+        section .main .buttons {
+            margin-top: 20px;
+        }
+
+        section .main button {
+            margin: 0 6px;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            columns: rgb(85, 85, 85);
+            border: 1px solid transparent;
+            outline: none;
+        }
+
+         section .main button:hover {
+            border:2px solid rgb(204, 204, 204);
+        }
+
+        .gmail:hover {
+            text-decoration: underline;
+        }
+
+        .image:hover {
+            text-decoration: underline;
+        }
+
+        .bar:hover {
+            padding: 8px;
+            background-color: rgb(205, 197, 197);
+            border-radius: 50%;
+
+        }
+       
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>
+            <ul>
+                <li><a href="#" class="
+                    gmail">Gmail</a></li>
+                <li><a href="#" class="image">Images</a></li>
+                <li class="bar"><a href="#"><img src="./img/bars.png" alt=""></a></li>
+                <li><button class="signin">Sign in</button></li>
+            </ul>
+        </header>
+        <div class="main">
+            <img src="./img/google.png" alt="">
+            <div class="search-box">
+                <form action="https://www.google.com/search">
+                    <input type="text" placeholder="Search Google or type a URL" class="search" name="q">
+                </form>
+                <div class="icon">
+                    <div> <img src="./img/search.png" alt=""></div>
+                    <div><img src="./img/mic.png" alt=""></div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button>Google search</button>
+                <button>I"m feeling lucky</button>
+            </div>
+
+
+
+        </div>
+    </section>
+</body>
+
+</html>
