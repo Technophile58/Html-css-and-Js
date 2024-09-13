@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //array loop
+let arr=["banana","mango","pineapple","litchi"];
+
+
+for(let i=0;i<arr.length;i++){
+    console.log(i,arr[i]);
+}
+
+console.log("backward printing");
+for(let i=arr.length-1;i>=0;i--){
+    console.log(i,arr[i]);
+}
+
+//nested array array of array
+ // Nested array (array of array)
+ let heroes = [
+            ["ironman", "batman", "superman"],
+            ["spiderman", "wonder woman", "flash"]
+        ];
+
+        for (let i = 0; i < heroes.length; i++) {
+            for (let j = 0; j < heroes[i].length; j++) {
+                console.log(heroes[i][j]);
+            }
+        }
+
+        //student and  marks array
+        let student=[["shivam",70],
+                    ["rahul",60],
+                ["raj",80] ];
+
+                for(let i=0;i<student.length;i++){
+                console.log(`Info of student ${i}`)
+                    for(let  j=0;j<student[i].length;j++){
+                        console.log(student[i][j]);
+                    }
+                }
+                console.log("For of loop")
+//for of loop  for(element of  collection){do something}
+    let fruits=["mango","apple","litchi","banana"];
+    for(fruit of fruits )
+{
+    console.log(fruit);
+}
+ 
+//also worked on string
+let name="Tushar";
+for(firstName of name){
+    console.log(firstName);
+}
+
+//also used in nesteed array
+
+let heroes2=[["ironman","superman","thor"],[
+         "captain america","flash","spiderman"]]
+    for(list of heroes2){
+        for(hero of list){
+            console.log(hero)
+        }
+    }
+    </script>
+</body>
+</html>
